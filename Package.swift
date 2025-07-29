@@ -16,7 +16,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.1"),
-		.package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "5.1.1"),
+		.package(url: "https://github.com/juozas-zealid/NVActivityIndicatorView.git", from: "5.2.1"),
 		.package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "4.2.2")
 	],
 	targets: [
