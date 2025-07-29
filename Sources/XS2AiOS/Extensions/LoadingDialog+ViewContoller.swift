@@ -3,7 +3,7 @@ import NVActivityIndicatorView
 
 struct ProgressDialog {
 	static var alert = UIAlertController()
-	static var indicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: .lineScale, color: XS2A.shared.styleProvider.tintColor)
+	static var indicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: NVActivityIndicatorType.lineScale, color: XS2A.shared.styleProvider.tintColor)
 }
 
 extension UIViewController {
@@ -18,7 +18,7 @@ extension UIViewController {
 
 class XS2ALoadingStateProvider: LoadingStateProvider {
 	var loadingIndicatorView: LoadingView {
-		NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: .lineScale, color: XS2A.shared.styleProvider.tintColor)
+		NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: NVActivityIndicatorType.lineScale, color: XS2A.shared.styleProvider.tintColor)
 	}
 
 	func showLoadingIndicator(title: String, message: String, over viewController: UIViewController) {
